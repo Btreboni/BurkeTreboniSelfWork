@@ -1,0 +1,2 @@
+Invoice ID# || Customer Name || State || State Tax Rate || Area (SqFt) || Product Type || Product Cost || Labor Cost Per SqFt || Material Cost ||Labor Cost Total || Total Tax || Total Amount ||
+35, Burke, PA, 6.75, 600, Laminate, 1.75, 2.10, 1050.00, 1260.00, 155.93, 2465.93

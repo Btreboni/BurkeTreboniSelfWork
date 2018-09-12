@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--Burke Treboni-->
+<html>
+    <head>
+        <title>Guess Me If You Can</title>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+               integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+               crossorigin="anonymous"></script>
+        <!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
+        <link href="css/index.css" rel="stylesheet">
+    </head>
+    <body>
+<div class="container" id="box">
+    <h1>Guess Me If You Can</h1>
+    <hr/>
+
+    <div id="greetings-elements">
+        <div id="correct-message">
+            <h1>Congrats!</h1>
+            <h3>You Guessed Correctly!</h3>
+            <h3>Would you like to play again?</h3>
+        </div>
+        <h1 id="greetings">Would you like to play the guessing game?</h1>
+        <button type="button" id="go-button">Click Here!</button>
+    </div>
+    <div id="guessing-elements">
+        <h1>Type in a number, and click Submit!</h1>
+        <input type="text" id="guess-value"/>
+        <button type="button" id="guess-button">Submit</button>
+        <div id="higher-message">
+            <h3>Your guess was too high, guess  again!</h3>
+        </div>
+        <div id="lower-message">
+            <h3>Your guess was too low, guess again!</h3>
+        </div>
+    </div>
+</div>
+    <script src="js/index.js"></script>  
+    </body>
+</html>

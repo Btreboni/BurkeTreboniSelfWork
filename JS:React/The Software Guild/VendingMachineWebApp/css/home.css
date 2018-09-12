@@ -1,0 +1,48 @@
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.add-money-div {
+    margin-bottom: 2%;
+}
+
+.add-money-span {
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.add-money {
+    width: 100px;
+}
+
+.product-btn {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 25%;
+}
+
+.item-id {
+    text-align: left;
+    font-size: small;
+}
+
+.item-price, .item-quantity {
+    text-align: center;
+    font-size: medium;
+}
+
+.item-name {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}

@@ -1,0 +1,4 @@
+Invoice ID# || Customer Name || State || State Tax Rate || Area (SqFt) || Product Type || Product Cost || Labor Cost Per SqFt || Material Cost ||Labor Cost Total || Total Tax || Total Amount ||
+29, Burke, OH, 6.25, 200, Carpet, 2.25, 2.10, 450.00, 420.00, 54.38, 924.38
+666, Wendy's, PA, 6.75, 500, Tile, 3.50, 4.15, 1750.00, 2075.00, 258.19, 4083.19
+668, Pat's Coffee House & Ride, IN, 6.00, 240, Wood, 5.15, 4.75, 1236.00, 1140.00, 142.56, 2518.56

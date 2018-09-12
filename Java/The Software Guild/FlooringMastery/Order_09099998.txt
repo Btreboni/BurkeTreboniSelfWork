@@ -1,0 +1,2 @@
+Invoice ID# || Customer Name || State || State Tax Rate || Area (SqFt) || Product Type || Product Cost || Labor Cost Per SqFt || Material Cost ||Labor Cost Total || Total Tax || Total Amount ||
+31, Filler, OH, 6.25, 200, Carpet, 2.25, 2.10, 450.00, 420.00, 54.38, 924.38

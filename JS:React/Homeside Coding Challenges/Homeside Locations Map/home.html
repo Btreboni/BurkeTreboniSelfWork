@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>Homeside Financial</title>
+    <link rel= "icon" type ="image/jpg" height="100" width= "100" href= "HomesideIcon.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+    <body>
+        <!-- Header section -->
+        <header id="primary-header">
+            <nav id="contact-nav">
+                <div class="row">
+                    <center>
+                        <ul>
+                            <a href="tel:1-888-826-2710" >
+                                <i class="icon fa fa-phone"></i>
+                                1-888-826-2710
+                            </a>
+                            &nbsp | &nbsp  
+                            <a href="mailto:ask@homeside.com" target="_blank" class="email">
+                                <i class="icon fa fa-envelope-o"></i>
+                                ASK@GOHOMESIDE.COM
+                            </a>
+                        </ul>
+                    </center>
+                </div>
+            </nav>
+        </header>
+        <!-- Header Ends -->
+        <br>
+        <!-- Homeside Logo -->
+        <div class = "container" id="logoContainer">
+            <center><img id="logo" src="HomesideFullLogo.jpg"/></center>
+        </div>
+        <!-- Homeside Logo Ends -->
+        <br>
+
+        <!-- This is where the map goes  -->
+        <div id="map"></div>
+
+        <!-- JavaScript for map population Begins -->
+        <script>
+            function initMap(){
+                // map options
+                var options = {
+                    zoom: 5,
+                    center: {lat: 36.684940, lng: -83.012695}
+                }
+                // map object
+                var map = new google.maps.Map(document.getElementById('map'), options);
+
+                //marker function
+                function addMarker(properties){
+                    var marker = new google.maps.Marker ({
+                        position: properties.coordinates,
+                        map:map
+                    });
+
+                    //Checking to see if there is content
+                    if(properties.content){
+                        var infoWindow = new google.maps.InfoWindow({
+                            content: properties.content
+                        });
+
+                        marker.addListener('click', function(){
+                            infoWindow.open(map, marker);
+                        });
+                    }
+                }
+
+                // Create a marker array that we will loop through; it's cleaner this way
+                var markersArray = [
+                    {
+                        coordinates:{lat: 30.670818, lng: -88.199034},
+                        content: '<h1>Mobile</h1> <h2>1110 Hillcrest Road</h2> <h2>Mobile, AL 26695</h2> <h2>(888) 826-2710</h2> <h2>Hours: 8AM-5PM, Mon-Fri</h2>'
+                    },
+                    {
+                        coordinates:{lat: 27.968867, lng: -82.569763},
+                        content: '<h1>Tampa</h1> <h2>3030 North Rocky Point Drive</h2> <h2>Tampa, FL 33607</h2> <h2>Hours: 8AM-5PM, Mon-Fri</h2>'
+                    },
+                    {
+                        coordinates:{lat: 33.596863, lng: -83.470692},
+                        content: '<h1>Madison</h1> <h2>224 West Washington Street</h2> <h2>Madison, GA 30650</h2> <h2>Hours: 8AM-5PM, Mon-Fri</h2>'
+                    },
+                    {
+                        coordinates:{lat: 39.109113, lng: -77.189995},
+                        content: '<h1>Rockville</h1> <h2>9211 Corporate Blvd.</h2> <h2>Rockville, MD 20850</h2> <h2>Hours: 8AM-5PM, Mon-Fri</h2>'
+                    },
+                    {
+                        coordinates:{lat: 35.208757, lng: -80.855083},
+                        content: '<h1>Charlotte</h1> <h2>1816 Lyndhurst Ave.</h2> <h2>Charlotte, NC 28203</h2> <h2>Hours: 8AM-5PM, Mon-Fri</h2>'
+                    },
+                    {
+                        coordinates:{lat: 35.917395, lng: -78.961680},
+                        content: '<h1>Durham</h1> <h2>7072 NC-751</h2> <h2>Durham, NC 7713</h2> <h2>Hours: 8AM-5PM, Mon-Fri</h2>'
+                    },
+                    {
+                        coordinates:{lat: 35.835578, lng: -78.689429},
+                        content: '<h1>Raleigh</h1> <h2>4141 Parklake Ave.</h2> <h2>Raleigh, NC 27612</h2> <h2>Hours: 8AM-5PM, Mon-Fri</h2>'
+                    },
+                    {
+                        coordinates:{lat: 41.318852, lng: -81.624400},
+                        content: '<h1>Cleveland</h1> <h2>7570 Chippewa Road</h2> <h2>Brecksville OH, 44141</h2> <h2>(888) 826-2710</h2> <h2>Hours: 8AM-5PM, Mon-Fri</h2>'
+                    },
+                    {
+                        coordinates:{lat: 39.231143, lng: -84.377362},
+                        content: '<h1>Cincinnati</h1> <h2>9545 Kenwood Road</h2> <h2>Cincinnati, OH 45242</h2> <h2>Hours: 9AM-6PM, Mon-Fri</h2>'
+                    },
+                    {
+                        coordinates:{lat: 40.047694, lng: -82.912656},
+                        content: '<h1>Columbus</h1> <h2>4249 Easton Way</h2> <h2>Columbus, OH 43219</h2> <h2>(888) 826-2710</h2> <h2>Hours: 9AM-6PM, Mon-Fri</h2>'
+                    },
+                    {
+                        coordinates:{lat: 41.157539, lng: -81.444265},
+                        content: '<h1>Stow</h1> <h2>3226 Kent Road</h2> <h2>Stow, OH  44224</h2> <h2>(888) 826-2710</h2> <h2>Hours: 9AM-6PM, Mon-Fri</h2>'
+                    },
+                    {
+                        coordinates:{lat: 40.787116, lng: -77.827982},
+                        content: '<h1>State College</h1> <h2>320 Rolling Ridge Drive</h2> <h2>State College, PA 16801</h2> <h2>(888) 826-2710</h2> <h2>Hours: 9AM-6PM, Mon-Fri</h2>'
+                    },
+                    {
+                        coordinates:{lat: 38.865771, lng: -77.365248},
+                        content: '<h1>Fairfax</h1> <h2>4000 Legato Road</h2> <h2>Fairfax, VA 22033</h2> <h2>Hours: 8AM-5PM, Mon-Fri</h2>'
+                    },
+                    {
+                        coordinates:{lat: 38.955292, lng: -77.364403},
+                        content: '<h1>Reston</h1> <h2>12110 Sunset Hills Road</h2> <h2>Reston, VA 20190</h2> <h2>(703) 385-1567</h2> <h2>Hours: 8AM-5PM, Mon-Fri</h2>'
+                    }
+                ];
+
+                // Loop through the markers
+                for(var i = 0; i < markersArray.length; i++){
+                    //Add the marker
+                    addMarker(markersArray[i]);
+                }
+            }
+        </script>
+        <!-- Javascript for map population ends -->
+
+        <!-- Google Map API -->
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBW7K4tItSeNHeqgi1kqvtwx5jvsWA_-5w&callback=initMap">
+        </script>
+
+        <!-- Footer Info Begins -->
+        <footer id="primary-footer"class="navbar navbar-fixed-bottom"><br>
+            <div id="aboutUs">
+                <table>
+                    <tr>
+                        <th>Address</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tr>
+                        <td>5950 Symphony Woods Rd, STE 312</td>
+                        <td>1-888-826-2710</td>
+                    </tr>
+                    <tr>
+                        <td>Columbia, MD 21044</td>
+                        <td>ask@gohomeside.com</td>
+                    </tr>
+            </div>
+            <br>
+            <div id="mediaLinks">
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a> |  
+                <a href="https://twitter.com/ins" class="fa fa-twitter"></a> |  
+                <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a> |  
+                <a href="https://www.instagram.com/" class ="fa fa-instagram"></a> | 
+                <a href="https://plus.google.com/+HomesideFinancialLLCColumbus" class="fa fa-google-plus"></a>
+            </div>
+        </footer>
+        <!-- Footer Info Ends -->
+    </body>
+</html>

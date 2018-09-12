@@ -1,0 +1,2 @@
+Invoice ID# || Customer Name || State || State Tax Rate || Area (SqFt) || Product Type || Product Cost || Labor Cost Per SqFt || Material Cost ||Labor Cost Total || Total Tax || Total Amount ||
+2, Novaks, OH, 4.25, 600, Carpet, 4.00, 2.12, 3.25, 600, 44.21000000000000085265128291212022304534912109375, 923.20

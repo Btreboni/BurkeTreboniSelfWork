@@ -1,0 +1,2 @@
+Invoice ID# || Customer Name || State || State Tax Rate || Area (SqFt) || Product Type || Product Cost || Labor Cost Per SqFt || Material Cost ||Labor Cost Total || Total Tax || Total Amount ||
+30, Burke, OH, 6.25, 1000, Carpet, 2.25, 2.10, 2250.00, 2100.00, 271.88, 4621.88

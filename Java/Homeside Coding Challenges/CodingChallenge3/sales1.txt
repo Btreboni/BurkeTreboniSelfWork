@@ -1,0 +1,12 @@
+Charlotte | 2575 units | $683,211,816.25
+Cinicinnati | 2575 units | $682,957,327.75
+Cleveland | 1750 units | $467,087,678.00
+Columbus | 2300 units | $641,281,571.00
+Durham | 2325 units | $637,421,523.75
+Fairfax | 2300 units | $611,248,927.25
+Raleigh | 1625 units | $434,001,352.00
+Reston | 2250 units | $594,019,760.50
+State College | 2225 units | $600,283,713.25
+Stow | 2675 units | $703,352,368.25
+Tampa | 2400 units | $660,940,048.50
+TOTAL $268,632,243.46 | 25 units | $0.00

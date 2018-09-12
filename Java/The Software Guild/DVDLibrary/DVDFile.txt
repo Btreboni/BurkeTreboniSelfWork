@@ -1,0 +1,9 @@
+1||Fight Club||1999||R||David Fincher||20th Centry Fox||Great Film!
+2||Snatch||2001||R||Guy Ritchie||Columbia Pictures||"Do you like dags?"
+3||Pulp Fiction||1994||R||Quentin Tarantino||Miramax||A must see!
+4||Django Unchained||2012||R||Quentin Tarantino||The Weinstein Company & Columbia Pictures||5/5!
+5||Battle: Los Angeles||2011||PG-13||Jonathan Liebesman||Colombia Pictures||5/5!
+6||Interstellar||2014||PG13||Christopher Nolan||Warner Bros.||E=MC^2!!
+7||Inception||2010||PG13||Christopher Nolan||Warner Bros.||This movie is upside down!
+8||The Wolf of Wall Street||2012||R||Martin Scorsese||Paramount||Yay
+10||Gone Girl||2014||R||Ben Afleck||Paramount||She Crazy!

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--Burke Treboni-->
+<html>
+    <head>
+        <title>Vending Machine</title>
+
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+               integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+               crossorigin="anonymous"></script>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/home.css" rel="stylesheet">
+        <style>
+            body {
+                background-image:url(http://alphabrainsz.net/wp-content/uploads/2016/11/excellent-matte-dark-grey-background-with-html-page-background-color-and-html-page-background-color-black.jpg);
+                background-repeat: no-repeat;
+            }
+
+            h1 {
+                color: white;
+            }
+
+            h3 {
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+<center>
+<div class="container">
+    <h1>Great Lakes Vending Co.</h1>
+    <hr/>
+
+    <ul class="list-group" id="errorMessages"></ul>
+
+    <div class="row">
+        <!--ITEM ROWS-->
+        <div class="row col-md-9">
+            <div class="row" id="productRows">
+
+            </div>
+        </div>
+
+        <!--I/O MONEY, MESSAGES, CHANGE-->
+        <div id="rightSide" class="col-md-3">
+
+            <!--USER INPUTS MONEY-->
+            <h3>Total $ In</h3>
+            <form class="form-horizontal" role="form" id="add-money">
+
+                <div class="form-group">
+
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" id="input-money" placeholder="$0.00" required/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="center add-money-div">
+                        <span class="add-money-span">
+                        <button type="button" id="dollar-button" class="btn btn-default add-money">
+                            Add Dollar
+                        </button>
+                        </span>
+
+                        <span class="add-money-span">
+                        <button type="button" id="quarter-button" class="btn btn-default add-money">
+                            Add Quarter
+                        </button>
+                            </span>
+                    </div>
+
+                    <div class="center add-money-div">
+                        <span class="add-money-span">
+                        <button type="button" id="dime-button" class="btn btn-default add-money">
+                            Add Dime
+                        </button>
+                        </span>
+
+                        <span class="add-money-span">
+                        <button type="button" id="nickel-button" class="btn btn-default add-money">
+                            Add Nickel
+                        </button>
+                        </span>
+                    </div>
+                </div>
+            </form>
+
+            <hr/> <!-- line break -->
+
+            <!--DISPLAY MESSAGE-->
+            <h3>Messages</h3>
+            <form class="form-horizontal" role="form" id="vending-message">
+                <div class="form-group">
+
+                    <div class="col-md-12">
+                        <input type="text" 
+                            class="form-control" 
+                            id="message-output"
+                            placeholder="Hello!"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="vending-message" class="col-md-2 control-label">
+                        Item:</label>
+
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="item-output" placeholder="Item No."/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="center">
+                        <button type="button" id="purchase-button" class="btn btn-default">
+                            Make Purchase
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <hr/> <!-- line break -->
+
+            <!--CHANGE FORM-->
+            <h3>Change</h3>
+            <form class="form-horizontal" role="form" id="vending-change">
+                <div class="form-group">
+
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" id="change-return" placeholder="Change" required/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="center">
+                        <button type="button" id="change-button" class="btn btn-default">
+                            Return Change
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</center>
+
+        <script src="js/bootstrap.js"></script>
+        <script src="js/home.js"></script>
+        
+    </body>
+</html>
