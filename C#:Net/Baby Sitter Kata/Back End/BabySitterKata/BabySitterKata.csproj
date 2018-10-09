@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+    <Folder Include="Models\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\Interfaces\" />
+    <Folder Include="Services\Implementations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\ValuesController.cs" />
+    <Compile Remove="BabySitterKataUnitTests\BabySitterTests.cs" />
+    <Compile Remove="BabySitterKataUnitTests\MyClass.cs" />
+    <Compile Remove="BabySitterKataUnitTests\Properties\AssemblyInfo.cs" />
+    <Compile Remove="BabySitterKataUnitTests\BabySitterTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Xamarin.iOS">
+      <HintPath>..\..\..\..\..\..\..\Library\Frameworks\Xamarin.iOS.framework\Versions\Current\lib\mono\Xamarin.iOS\Xamarin.iOS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="BabySitterKataUnitTests\obj\Debug\BabySitterKataUnitTests.csprojAssemblyReference.cache" />
+    <None Remove="BabySitterKataUnitTests\obj\Debug\BabySitterKataUnitTests.csproj.CoreCompileInputs.cache" />
+    <None Remove="BabySitterKataUnitTests\obj\Debug\BabySitterKataUnitTests.csproj.FileListAbsolute.txt" />
+    <None Remove="BabySitterKataUnitTests\obj\Debug\BabySitterKataUnitTests.csproj.CoreCompileInputs.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="BabySitterKataUnitTests\packages.config" />
+  </ItemGroup>
+</Project>

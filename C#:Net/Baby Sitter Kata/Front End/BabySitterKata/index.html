@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--Burke Treboni-->
+<html>
+    <head>
+        <title>Baby Sitter Wage Calculator</title>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+               integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+               crossorigin="anonymous"></script>
+        <!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
+        <link href="css/index.css" rel="stylesheet">
+    </head>
+    <body>
+			<h1>Baby Sitter Wage Calculator</h1>
+			<hr>
+			<div id="box-one">
+				<div id="click-to-begin">
+					<h3>Click below to calculate your nightly wage!</h3>
+					<button type="button" id="start-wage-calculator-button">Click Here!</button>
+				</div>
+			</div>
+			<div id="box-two">
+				<div>
+					<h3>Enter your start time</h3>
+					<select name="startValueTime" id="start-time-value" >
+							<option value=""></option>
+							<option value=5>5pm</option>
+							<option value="5.5">5:30pm</option>
+							<option value="6">6pm</option>
+							<option value="6.5">6:30pm</option>
+							<option value="7">7pm</option>
+							<option value="7.5">7:30pm</option>
+							<option value="8">8pm</option>
+							<option value="8.5">8:30pm</option>
+							<option value="9">9pm</option>
+							<option value="9.5">9:30pm</option>
+							<option value="10">10pm</option>
+							<option value="10.5">10:30pm</option>
+							<option value="11">11pm</option>
+							<option value="11.5">11:30pm</option>
+							<option value="12">12am</option>
+							<option value="12.5">12:30am</option>
+							<option value="13">1am</option>
+							<option value="13.5">1:30am</option>
+							<option value="14">2am</option>
+							<option value="14.5">2:30am</option>
+							<option value="15">3am</option>
+							<option value="15.5">3:30am</option>
+							<option value="16">4am</option>
+						</select>
+					<br>
+					<h3>Enter what time you will put the children down</h3>
+					<select name="downTimeValue" id="down-time-value" >
+							<option value=""></option>
+							<option value="5">5pm</option>
+							<option value="5.5">5:30pm</option>
+							<option value="6">6pm</option>
+							<option value="6.5">6:30pm</option>
+							<option value="7">7pm</option>
+							<option value="7.5">7:30pm</option>
+							<option value="8">8pm</option>
+							<option value="8.5">8:30pm</option>
+							<option value="9">9pm</option>
+							<option value="9.5">9:30pm</option>
+							<option value="10">10pm</option>
+							<option value="10.5">10:30pm</option>
+							<option value="11">11pm</option>
+							<option value="11.5">11:30pm</option>
+							<option value="12">12am</option>
+							<option value="12.5">12:30am</option>
+							<option value="13">1am</option>
+							<option value="13.5">1:30am</option>
+							<option value="14">2am</option>
+							<option value="14.5">2:30am</option>
+							<option value="15">3am</option>
+							<option value="15.5">3:30am</option>
+							<option value="16">4am</option>
+						</select>
+					<br>
+					<h3>Enter what time you will clock off at</h3>
+					<select name="endTimeValue" id="end-time-value">
+						<option value=""></option>
+						<option value="5">5pm</option>
+						<option value="5.5">5:30pm</option>
+						<option value="6">6pm</option>
+						<option value="6.5">6:30pm</option>
+						<option value="7">7pm</option>
+						<option value="7.5">7:30pm</option>
+						<option value="8">8pm</option>
+						<option value="8.5">8:30pm</option>
+						<option value="9">9pm</option>
+						<option value="9.5">9:30pm</option>
+						<option value="10">10pm</option>
+						<option value="10.5">10:30pm</option>
+						<option value="11">11pm</option>
+						<option value="11.5">11:30pm</option>
+						<option value="12">12am</option>
+						<option value="12.5">12:30am</option>
+						<option value="13">1am</option>
+						<option value="13.5">1:30am</option>
+						<option value="14">2am</option>
+						<option value="14.5">2:30am</option>
+						<option value="15">3am</option>
+						<option value="15.5">3:30am</option>
+						<option value="16">4am</option>
+					</select>
+					<br>
+					<button type="button" id="fire-wage-calculator-button" onclick="onFireWageCalculatorButton()">
+						Calculate Nightly Wage
+					</button>
+				</div>
+			</div>
+			<div id="box-three">
+				<div id="wage-row"></div>
+				<button id="recalculate-button" onclick="onFireReCalculateButton()"> Would you like to calculate another job?</button>
+			</div>
+
+    <script src="js/index.js"></script>  
+    </body>
+</html>
