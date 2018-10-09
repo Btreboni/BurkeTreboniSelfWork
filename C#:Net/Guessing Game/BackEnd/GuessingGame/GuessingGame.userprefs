@@ -1,7 +1,8 @@
 ﻿<Properties StartupConfiguration="{99B82C09-73BA-45E8-A329-CFFA8692250E}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/GuessingController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
     <Files>
-      <File FileName="Controllers/GuessingController.cs" Line="14" Column="60" />
+      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="Startup.cs" Line="16" Column="65" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
